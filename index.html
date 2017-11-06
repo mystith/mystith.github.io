@@ -2,15 +2,15 @@
 <html>
   <body style="text-align: center;">
     <script>
-      function imageExists(url, callback) {
+      function imageExists(url, callback, index) {
         var img = new Image();
-        img.onload = function() { callback(url, true); };
-        img.onerror = function() { callback(url, false); };
+        img.onload = function() { callback(url, true, index); };
+        img.onerror = function() { callback(url, false, index); };
         img.src = url;
       }
       
       for(var i = 1; i < 500; i++){
-        imageExists("mystith.github.io/backgrounds/" + i + ".png", function(url, exists) { document.body.innerHTML += '<img src="' + url + '" alt="bg" height="300" width="1040"><br>'; });
+        imageExists("mystith.github.io/backgrounds/" + i + ".png", function(url, exists, index) { if(exists){ document.body.innerHTML += '<p>---------------------------------</p><br><p style="font-family:verdana;">' + index + "</p><br><img src="' + url + '" alt="bg" height="300" width="1040"><br>'; } }, i);
       }
     </script>
   </body>
