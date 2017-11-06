@@ -12,6 +12,8 @@
       for(var i = 1; i < 500; i++){
         if(imageExists("mystith.github.io/backgrounds/" + i + ".png")){
           document.body.innerHTML += '<p style="font-family:verdana;">---------------------------------<br>Background ' + i + '</p><br><img src="mystith.github.io/backgrounds/' + i + '.png" alt="bg" height="300" width="1040"><br>';
+        } else {
+          break;
         }
       }
     </script>
