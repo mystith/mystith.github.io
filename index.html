@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <body style="text-align: center;">
+    <p style="font-family:verdana;">welcome to the github page for the nekozi discord bot's backgrounds</p>
     <script>
       function imageExists(url) {
         var http = new XMLHttpRequest();
@@ -11,7 +12,7 @@
       
       for(var i = 1; i < 500; i++){
         if(imageExists("mystith.github.io/backgrounds/" + i + ".png")){
-          document.body.innerHTML += '<p style="font-family:verdana;">---------------------------------<br>Background ' + i + '</p><br><img src="mystith.github.io/backgrounds/' + i + '.png" alt="bg" height="300" width="1040"><br>';
+          document.body.innerHTML += '<p style="font-family:verdana;">---------------------------------<br>Background ID:' + i + '</p><br><img src="mystith.github.io/backgrounds/' + i + '.png" alt="bg" height="300" width="1040"><br>';
         } else {
           break;
         }
