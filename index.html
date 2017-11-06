@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <body>
+  <body style="text-align: center;">
     <script>
       function imageExists(url, callback) {
         var img = new Image();
@@ -9,7 +9,7 @@
         img.src = url;
       }
       
-      for(var i = 0; i < 400; i++){
+      for(var i = 1; i < 500; i++){
         imageExists("mystith.github.io/backgrounds/" + i + ".png", function(url, exists) { document.body.innerHTML += '<img src="' + url + '" alt="bg" height="300" width="1040"><br>'; });
       }
     </script>
