@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function imageExists(url, callback) {
+        var img = new Image();
+        img.onload = function() { callback(url, true); };
+        img.onerror = function() { callback(url, false); };
+        img.src = url;
+      }
+      
+      for(var i = 0; i < 400; i++){
+        imageExists("mystith.github.io/backgrounds/" + i + ".png", function(url, exists) { document.body.innerHTML += '<img src="' + url + '" alt="bg" height="1040" width="300">'; });
+      }
+    </script>
+  </body>
+</html>
 
