@@ -2,16 +2,17 @@
 <html>
   <body style="text-align: center;">
     <script>
-      var k = 1;
-      function imageExists(url, callback, index) {
-        var img = new Image();
-        img.onload = function() { callback(url, true, index); };
-        img.onerror = function() { callback(url, false, index); };
-        img.src = url;
+      function imageExists(url) {
+        var http = new XMLHttpRequest();
+        http.open('HEAD', url, false);
+        http.send();
+        return http.status != 404;
       }
       
       for(var i = 1; i < 500; i++){
-        imageExists("mystith.github.io/backgrounds/" + i + ".png", function(url, exists, index) { while(k != index) { } if(exists){ document.body.innerHTML += '<p style="font-family:verdana;">---------------------------------<br>Background ' + index + '</p><br><img src="' + url + '" alt="bg" height="300" width="1040"><br>'; i++; } }, i);
+        if(imageExists("mystith.github.io/backgrounds/" + i + ".png")){
+          document.body.innerHTML += '<p style="font-family:verdana;">---------------------------------<br>Background ' + index + '</p><br><img src="' + url + '" alt="bg" height="300" width="1040"><br>';
+        }
       }
     </script>
   </body>
