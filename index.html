@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html>
+  <head>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<style>
+		.roboto {
+		    font-family: Roboto, sans-serif;
+			font-size: 1.7em;
+			line-height: 1em;
+			letter-spacing: 0.008em;
+			color: #444444;
+		}
+		
+		.robotosmol {
+		    font-family: Roboto, sans-serif;
+			font-size: 1em;
+			line-height: 1em;
+			letter-spacing: 0.05em;
+			color: #444444;
+		}
+	</style>
+  </head>
   <body style="text-align: center;">
-    <p style="font-family:verdana;">welcome to the github page for the nekozi discord bot's backgrounds</p>
+    <p class='roboto'>welcome to the github page for the nekozi discord bot's backgrounds</p>
     <script>
       function imageExists(url) {
         var http = new XMLHttpRequest();
@@ -12,7 +32,7 @@
       
       for(var i = 1; i < 500; i++){
         if(imageExists("mystith.github.io/backgrounds/" + i + ".png")){
-          document.body.innerHTML += '<hr width="100%"><p style="font-family:verdana,sans-serif;">Background ID:' + i + '</p><br><img src="mystith.github.io/backgrounds/' + i + '.png" alt="bg" height="300" width="1040"><br>';
+          document.body.innerHTML += "<hr width='100%'><p class='robotosmol'>Background ID:" + i + "</p><br><img src='mystith.github.io/backgrounds/" + i + ".png' alt='bg' height='300' width='1040'><br>";
         } else {
           break;
         }
