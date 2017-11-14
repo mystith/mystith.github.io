@@ -5,13 +5,13 @@ function imageExists(url) {
     return http.status != 404;
 }
 
-/*for(var i = 1; i < 500; i++){
+for(var i = 1; i < 500; i++){
     if(imageExists("mystith.github.io/backgrounds/" + i + ".png")){
         document.getElementById('bgtablebody').innerHTML += "<hr width='100%'><p class='robotosmol'>Background ID:" + i + "</p><br><img src='mystith.github.io/backgrounds/" + i + ".png' alt='bg' height='300' width='1040'><br>";
     } else {
         break;
     }
-}*/
+}
 
 var str = "";
 if(location.search.length > 0){
