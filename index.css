@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.roboto {
+    font-family: Roboto, sans-serif;
+    font-size: 5em;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+    color: #297960;
+}
+
+.robotosmolish {
+    font-family: Roboto, sans-serif;
+    font-size: 1.5em;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+    color: #297960;
+}
+
+.robotosmol {
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    color: #292929;
+}
+
+.viewmore {
+    color: #000000;
+    border: #292929 solid 1px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.viewmore:hover {
+    color: #ffffff;
+    background-color: #292929;
+}
