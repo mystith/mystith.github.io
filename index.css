@@ -49,22 +49,23 @@
 .background {
     border-style: solid;
     border-width: 1px;
+    width: 90%;
+    height: 90%;
 }
 
-.main {
+#main {
     background-color: rgba(0, 0, 0, 0.8);
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
 }
 
-.mainbg {
+#mainbg {
     background-color: rgba(0, 0, 0, 0.8);
     width: 60%;
     margin-left: 20%;
 }
 
 body {
-    background-image: url("wallpaper.jpg");
+    background-image: url("wallpaper.png");
     background-size: cover;
     background-attachment: fixed;
 }
