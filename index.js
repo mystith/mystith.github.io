@@ -40,7 +40,7 @@ if(location.search.length > 0){
             str += String.fromCharCode(pixelData[0]);
         }
     }
-    str = str.split('><|><');
+    str = atob(str).split('><|><');
 } else {
     document.getElementById("leaderboards").innerHTML += "<p class='robotosmolish'>use the n!top command within nekozi to see global leaderboards</p>"
 }
