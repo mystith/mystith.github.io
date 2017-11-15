@@ -23,14 +23,14 @@
     color: #292929;
 }
 
-.viewmore {
+.button {
     color: #000000;
     border: #292929 solid 1px;
     padding: 10px;
     background-color: #ffffff;
 }
 
-.viewmore:hover {
+.button:hover {
     color: #ffffff;
     background-color: #292929;
 }
