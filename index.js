@@ -22,6 +22,7 @@ if(location.search.length > 0){
     }
 
     var img = document.createElement('img');
+    img.crossOrigin = "Anonymous";
     img.src = atob(link);
     var canvas = document.createElement('canvas');
     canvas.width = img.width;
@@ -41,7 +42,7 @@ if(location.search.length > 0){
     }
     str = str.split('><|><');
 } else {
-    document.body.innerHTML += "<p class='robotosmolish'>use the n!top command within nekozi to see global leaderboards</p>"
+    document.getElementById("leaderboards").innerHTML += "<p class='robotosmolish'>use the n!top command within nekozi to see global leaderboards</p>"
 }
 
 $(document).ready(function(){$( ".viewmore" ).on( "click", function() {
