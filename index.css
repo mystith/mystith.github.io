@@ -65,10 +65,12 @@
 }
 
 body {
-    background-image: url("wallpaper.png");
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: repeating-linear-gradient(
+        45deg,
+        #ffffff,
+        #ffffff 15px,
+        #98b6b6 10px,
+        #98b6b6 30px
+      );
+    background-size: 200%;
 }
