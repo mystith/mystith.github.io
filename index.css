@@ -58,13 +58,13 @@
     width: 100%;
 }
 
-#mainbg {
+/*#mainbg {
     background-color: rgba(0, 0, 0, 0.8);
     width: 60%;
     margin-left: 20%;
 }
 
-/*body {
+body {
     background: repeating-linear-gradient(
         45deg,
         #ffffff,
