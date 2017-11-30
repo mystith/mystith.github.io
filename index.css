@@ -18,7 +18,7 @@
 
 .robotosmol {
     font-family: Roboto, sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1em;
     letter-spacing: 0.05em;
     color: #4ca589;
@@ -49,8 +49,8 @@
 .background {
     border-style: solid;
     border-width: 1px;
-    width: 90%;
-    height: 90%;
+    /*width: 90%;
+    height: 90%;*/
 }
 
 #main {
