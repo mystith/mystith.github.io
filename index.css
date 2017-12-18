@@ -38,6 +38,7 @@
 .button:hover {
     color: #74b6a0;
     background-color: #2f5347;
+    cursor:pointer;
 }
 
 .circular {
