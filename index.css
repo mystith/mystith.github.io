@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.intro {
+    margin: auto;
+    max-width: 80%;
+}
+
 .mint {
     color: #92bbaf;
 }
@@ -32,6 +37,7 @@
     overflow: hidden;
     transition: 0.6s;
     margin: auto;
+    max-width: 90%;
 }
 
 .button {
