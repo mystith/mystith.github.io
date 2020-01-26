@@ -1,79 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.intro {
+    margin: auto;
+    max-width: 80%;
+}
+
+.mint {
+    color: #92bbaf;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
 .roboto {
     font-family: Roboto, sans-serif;
+    line-height: 1em;
+}
+
+.large {
     font-size: 5em;
-    line-height: 1em;
     letter-spacing: 0.03em;
-    color: #377562;
-    font-weight: 500;
 }
 
-.robotosmolish {
-    font-family: Roboto, sans-serif;
+.medium {
     font-size: 1.75em;
-    line-height: 1em;
     letter-spacing: 0.03em;
-    color: #377562;
 }
 
-.robotosmol {
-    font-family: Roboto, sans-serif;
+.small {
     font-size: 1.2em;
-    line-height: 1em;
     letter-spacing: 0.05em;
-    color: #377562;
+}
+
+.button-wrapper {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    border: #292929 solid 1px;
+    background-color: #74b6a0;
+    overflow: hidden;
+    transition: 0.6s;
+    margin: auto;
+    max-width: 90%;
 }
 
 .button {
     color: #000000;
-    border: #292929 solid 1px;
     padding: 10px;
-    background-color: #74b6a0;
     text-decoration: none;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
 }
 
 .button:hover {
     color: #74b6a0;
+}
+
+.button-wrapper:hover {
     background-color: #2f5347;
-    cursor:pointer;
+    cursor: pointer;
+}
+
+body {
+    background-color: #161616;
 }
 
 .circular {
     border-radius: 50%;
     border-style: solid;
     border-width: 1px;
-  }
-
-.background {
-    border-style: solid;
-    border-width: 1px;
-    /*width: 90%;
-    height: 90%;*/
 }
-
-#main {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-}
-
-/*#mainbg {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 60%;
-    margin-left: 20%;
-}
-
-body {
-    background: repeating-linear-gradient(
-        45deg,
-        #ffffff,
-        #ffffff 15px,
-        #98b6b6 10px,
-        #98b6b6 30px
-      );
-    background-size: 200%;
-}*/
