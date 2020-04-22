@@ -5,6 +5,11 @@
     max-width: 80%;
 }
 
+.todolist {
+    margin: auto;
+    max-width: 80%;
+}
+
 .mint {
     color: #92bbaf;
 }
@@ -57,4 +62,8 @@
 
 body {
     background-color: #161616;
+}
+
+ul {
+    list-style-type: none;
 }
